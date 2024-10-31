@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth; /* تفعيل التمرير السلس */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* لون خلفية خفيف */
+}
+
+header {
+    display: flex; /* استخدام الفليكس لتنظيم العناصر */
+    justify-content: space-between; /* توزيع المساحة بالتساوي */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    background-color: #333; /* لون خلفية داكن */
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* تأثير التحويم */
+}
+
+nav ul li a:hover {
+    color: #e74c3c; /* تغيير اللون عند التحويم */
+}
+
+.hero {
+    padding: 100px 20px; /* زيادة الحشوة لجعل النص أكثر بروزًا */
+    background: linear-gradient(to bottom right, #e74c3c, #c0392b); /* تأثير تدرج لوني */
+    color: white;
+    text-align: center;
+}
+
+.cta {
+    background-color: #fff;
+    color: #e74c3c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* تأثير التحويم */
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta:hover {
+    background-color: #f1c40f; /* تغيير لون الزر عند التحويم */
+    transform: scale(1.05); /* زيادة حجم الزر قليلاً */
+}
+
+.about, .games, .contact {
+    padding: 50px 20px;
+    background: #fff; /* خلفية بيضاء */
+    text-align: center;
+    margin: 20px 0; /* مسافة بين الأقسام */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+}
+
+.game {
+    margin: 20px 0;
+}
+
+.contact {
+    background: #f9f9f9; /* خلفية خفيفة */
+}
+
+.form-group {
+    margin-bottom: 20px; /* مسافة بين حقول النموذج */
+}
+
+label {
+    display: block; /* جعل التصنيف يظهر ككتلة */
+    margin-bottom: 5px; /* مسافة أسفل التصنيف */
+    font-weight: bold; /* جعل النص غامق */
+    color: #333; /* لون النص */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* عرض 100% */
+    padding: 10px; /* حشوة */
+    border: 1px solid #ddd; /* حدود خفيفة */
+    border-radius: 5px; /* زوايا دائرية */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+    transition: border-color 0.3s; /* تأثير التغيير في الحدود */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #e74c3c; /* تغيير لون الحدود عند التركيز */
+    outline: none; /* إزالة الإطار الافتراضي */
+}
+
+textarea {
+    height: 100px; /* ارتفاع ثابت للمنطقة */
+    resize: none; /* منع تغيير الحجم */
+}
+
+.submit-button {
+    background-color: #e74c3c; /* لون الزر */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* حشوة */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير التحويم */
+    font-weight: bold; /* جعل النص غامق */
+}
+
+.submit-button:hover {
+    background-color: #c0392b; /* تغيير اللون عند التحويم */
+    transform: scale(1.05); /* زيادة حجم الزر قليلاً */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* لون خلفية داكن */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
